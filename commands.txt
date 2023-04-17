@@ -1,4 +1,4 @@
-git clone https://github.com/sabihak89/nobelium.git : downloads the specified repository on local system
+git clone https://github.com/sabihak89/technetium.git : downloads the specified repository on local system
 git status : shows if you have modified any files on your local after cloning the repository
 git branch : can be used to check the active branch
 git branch -a : Lists all the branches of the repository
