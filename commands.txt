@@ -14,3 +14,11 @@ git commit -m “Added a text file for demo” : Creates a commit with a relevan
 git push repo-link: pushes the commit to the specified remote repository
 git push --set-upstream origin (Only applicable when pushing a new branch for the first time to the same repository you are at)
 git branch -D branch-name-to-be-deleted : You have to checkout branch A first if you are trying to delete branch B. 
+
+Update Git config with the following:
+git config --global user.name "your_username"
+git config --global user.email "your_email"
+git config --global user.password "your_personal_access_token"
+
+Generate Personal Access Token from Settings > Developer Settings > Personal Access Token 
+Note: Dont forget to set scope as 'repo' when generating the token, also store the token safely. 
