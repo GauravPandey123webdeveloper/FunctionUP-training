@@ -12,3 +12,6 @@
 ### Note
 - Refer the commands [here](https://github.com/sabihak89/technetium/blob/session/git/commands.txt)
 - Refer the session summary [here](https://drive.google.com/file/d/1GtJorM49A7QHveyKzsu_iWmG9vbjGFEV/view?usp=share_link) 
+
+
+let me tell something
