@@ -1,5 +1,5 @@
-# Californium
+# Technetium
 
-Backend cohort Nov 2022 - Mar 2023
+Backend cohort Mar, 2023
 
 
