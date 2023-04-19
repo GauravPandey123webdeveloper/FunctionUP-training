@@ -1,5 +1,9 @@
 # Technetium
 
-Backend cohort Mar, 2023
+## Nodejs Introduction Session
+
+### Backend cohort Mar, 2023
+
+Today we are starting Nodejs
 
 
