@@ -1,9 +1,9 @@
 # Technetium
 
-## Nodejs Introduction Session
+Nodejs Introduction Session
 
-### Backend cohort Mar, 2023
+## Assignment 
 
-Today we are starting Nodejs
+https://docs.google.com/document/d/1fsz27ekIG7l_FBSL1mIw-1vXTDNJun3HNrP-EG4oR94/edit
 
 
