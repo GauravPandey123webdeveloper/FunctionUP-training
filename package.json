@@ -4,13 +4,14 @@
   "description": "Backend cohort for Californium(Nov,2022 - Mar,2023)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node ./src/index.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "lodash": "^4.17.21"
   }
 }
