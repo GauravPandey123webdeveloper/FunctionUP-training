@@ -32,6 +32,28 @@ router.get('/films', function (req, res) {
        }];     
        res.send(filmsarr);
 });
+router.get('/films/:filmId', function(req, res){
+    let filmsarr=[ {
+        "id": 1,
+        "name": "The Shining"
+       }, {
+        "id": 2,
+        "name": "Incendies"
+       }, {
+        "id": 3,
+        "name": "Rang de Basanti"
+       }, {
+        "id": 4,
+        "name": "Finding Nemo"
+       }];     
+       let id=req.params.filmId;
+       for(let i=0;i<filmsarr.length;i++){
+        if(id==filmsarr[i].id){
+           res.send( filmsarr[i]);
+        }
+       }
+       res.send("No movie exists with this id");
+})
 
 router.get('')
 module.exports = router;
