@@ -5,3 +5,4 @@ const doSomething = function () {
 }
 
 module.exports.name = name
+module.exports.doSomething = doSomething

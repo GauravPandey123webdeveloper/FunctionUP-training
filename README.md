@@ -1,9 +1,14 @@
 # Technetium
 
-Nodejs Introduction Session
+Nodejs Get Api Session
 
 ## Assignment 
 
-https://docs.google.com/document/d/1fsz27ekIG7l_FBSL1mIw-1vXTDNJun3HNrP-EG4oR94/edit
+https://docs.google.com/document/d/1bivlpkgtsJfsudBDcXDNHboGjyuAGA6KgzxJKwJSQwI/edit
+
+## Topics covered
+### Debugger overview
+### Path Parameters
+### Query Parameters
 
 
