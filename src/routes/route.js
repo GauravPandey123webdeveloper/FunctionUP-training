@@ -9,13 +9,14 @@ router.get('/movies', function (req, res) {
 router.get('/movies/:indexNumber',function(req,res){
     let movarr=['Doctor strange','Iron man', 'Bhool Bhulyia','kabhi khushi kabhi gum'];
     let indx=req.params.indexNumber;
-    if(indx<movarr.length-1&&indx>=0){
-        res.send(movarr[indx]);
+    if(indx<movarr.length&&indx>=0){
+        return res.send(movarr[indx]);
     }
     else{
-        res.send("Enter the valid index ");
+         return res.send("Enter the valid index ");
     } 
 });
+//problem 4
 router.get('/films', function (req, res) {
     let filmsarr=[ {
         "id": 1,
@@ -49,11 +50,11 @@ router.get('/films/:filmId', function(req, res){
        let id=req.params.filmId;
        for(let i=0;i<filmsarr.length;i++){
         if(id==filmsarr[i].id){
-           res.send( filmsarr[i]);
+            return res.send( filmsarr[i]);
         }
        }
-       res.send("No movie exists with this id");
-})
+        return res.send("No movie exists with this id");
+});
 
 router.get('')
 module.exports = router;
