@@ -5,7 +5,6 @@ const createBook= async function (req, res) {
     let savedData= await BookModel.create(data)
     res.send({msg: savedData})
 }
-
 const getBooksData= async function (req, res) {
     let name=req.body.authorName;
     let id= await authorModel.findOne({authorName:name}).select({author_id:1,_id:0})
