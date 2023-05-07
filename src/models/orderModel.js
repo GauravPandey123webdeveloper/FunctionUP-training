@@ -1,5 +1,5 @@
 const mongoose=require('mongoose')
-const objectId=mongoose.Schema.objectId;
+const objectId=mongoose.Types.ObjectId;
 const orderSchema= new mongoose.Schema({
           userId:objectId,
           productId:objectId,

@@ -1,11 +1,11 @@
 const mongoose = require('mongoose');
 const userSchema = new mongoose.Schema( {
-    Name: String,
+    name: String,
     balance:Number,
-    address:Schema.Types.Mixed,
+    address:mongoose.Schema.Types.Mixed ,
     age: Number,
     gender:String,
-    isFreeUseer:{
+    isFreeAppUser:{
         type:Boolean,
         default:false
     }
