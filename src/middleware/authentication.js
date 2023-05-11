@@ -5,22 +5,23 @@ const authentication= async function(req,res,next){
   
     //If no token is present in the request header return error. This means the user is not logged in.
     if (!token) return res.send({ status: false, msg: "token must be present" });
-  
     console.log(token);
-  
-    // If a token is present then decode the token with verify function
-    // verify takes two inputs:
-    // Input 1 is the token to be decoded
-    // Input 2 is the same secret with which the token was generated
-    // Check the value of the decoded token yourself
-  
-    // Decoding requires the secret again. 
-    // A token can only be decoded successfully if the same secret was used to create(sign) that token.
-    // And because this token is only known to the server, it can be assumed that if a token is decoded at server then this token must have been issued by the same server in past.
     let decodedToken = jwt.verify(token, "functionup-technetium-very-very-secret-key");
+    req.decodedToken=decodedToken;
     if (!decodedToken){
       return res.send({ status: false, msg: "token is invalid" });
     }
     next()
 }
+const authorisation= async function(req,res,next){
+  userId=req.params.userId
+  user=req.decodedToken.userId;
+  if(userId==user){
+    next()
+  }
+  else{
+    res.send({msg:"you are not authorised"})
+  }
+} 
 module.exports.authentication=authentication;
+module.exports.authorisation=authorisation;
